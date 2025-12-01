@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-form{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #ccc;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.title{
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+.form-group{
+    padding: 10px 40px;
+    background-color: white;
+}
+.form-email input{
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px 0;
+}
+.form-password input{
+    display: block;
+    padding: 8px 0 2px 5px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px 0;
+}
+button{
+    width: 200px;
+    background-color:cornflowerblue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+span{
+    margin: 0 auto 10px auto;
+}
