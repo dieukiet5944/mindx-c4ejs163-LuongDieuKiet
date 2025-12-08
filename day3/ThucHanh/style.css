@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.box{
+    position: relative;
+    width: 700px;
+    height: 600px;
+    border: 1px solid aqua;
+}
+.top{
+    background-color: white;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bottom{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 40%;
+}
+.middle{
+    position: relative;
+    top: -20%;
+    left: 20%;
+    background-color: burlywood;
+    width: 60%;
+    height: 40%;
+    border-radius: 50px;
+}
+.imgbox{
+    position: relative;
+    right: 3%;
+    top: 2%;
+}
+.imgbox2{
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+.img1{
+height: 180px;
+width: 180px;
+border-radius: 50%;
+}
+.img2{
+height: 120px;
+width: 120px;
+border-radius: 50%;
+}
+.modal{
+    width: 240px;
+    height: 240px;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.exitButton{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #888;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 10px;
+    right: 5px;
+    top: 5px;
+}
+.modal-box{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #ccc;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.modal-header{
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.modal-content{
+    width: 80%;
+        height: 80px;
+        background-color: aqua;
+    border-radius: 5px;
+    text-align: center;
+    text-transform:uppercase;
+}
+input{
+    width: 80%;
+    border-radius: 5px;
+}
+.submitButton{
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 5px;
+}
