@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.card-with-purple-border {
+    position: relative;
+    overflow: visible;
+}
+
+.card-with-purple-border::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    /* cách mép trên một chút để không bọc trên */
+    left: 10px;
+    /* cách mép trái một chút để không bọc trái */
+    right: -10px;
+    /* viền bọc ra bên phải 10px */
+    bottom: -10px;
+    /* viền bọc ra bên dưới 10px */
+    background: #777;
+    border-radius: 10px;
+    /* bo góc giống card */
+    z-index: -1;
+    opacity: 0.3;
+    /* có thể giảm xuống 0.6 nếu muốn nhẹ hơn */
+}

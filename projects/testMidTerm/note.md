@@ -1,0 +1,3 @@
+-Sử dụng AI hỗ trợ thiết kế bố cục layout phần Main content phải (hình dung sắp xếp bố cục)
+-Sử dụng AI hỗ trợ làm phần đổ bóng cho card (class card-with-purple-border trong file styles.css)
+-Thiếu sót không biết cách lấy background trong file figma.
