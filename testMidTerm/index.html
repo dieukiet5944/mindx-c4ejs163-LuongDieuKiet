@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header Section -->
+        <div
+            class="header flex items-center justify-between py-[46px] px-[40px]"
+        >
+            <div class="logo text-4xl font-bold cursor-pointer">Chief LA</div>
+            <div class="nav flex-1 flex justify-center">
+                <ul class="flex space-x-[45px]">
+                    <li>
+                        <a
+                            href="#"
+                            class="text-[16px] hover:text-blue-400 transition font-bold underline"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="text-[16px] hover:text-blue-400 transition font-bold"
+                            >About us</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="text-[16px] hover:text-blue-400 transition font-bold"
+                            >Services</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="text-[16px] hover:text-blue-400 transition font-bold"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="user flex items-center space-x-6">
+                <!-- Bell Icon -->
+                <button>
+                    <img
+                        src="./assets/iconBell.png"
+                        alt=""
+                        width="24px"
+                        height="24px"
+                    />
+                </button>
+                <div class="user-info flex items-center space-x-6">
+                    <!-- Avatar-->
+                    <div
+                        class="w-[60px] h-[60px] rounded-md cursor-pointer"
+                        style="background-image: url('./assets/avatar.png')"
+                    ></div>
+
+                    <!-- User Name -->
+                    <span
+                        class="text-[24px] font-bold text-[#7200B8] hidden md:block cursor-pointer"
+                        >Kunle Ajayi</span
+                    >
+                </div>
+            </div>
+        </div>
+        <!-- Dashboard -->
+        <div class="flex min-h-screen px-[40px]">
+            <!-- Sidebar trái -->
+            <aside
+                class="w-[254px] h-[783px] bg-black text-white flex flex-col rounded-[10px] shadow-2xl"
+            >
+                <nav class="flex-1 pr-8 py-12 space-y-4 w-[180px] h-[390px]">
+                    <!-- Dashboard - đang active -->
+                    <a
+                        href="#"
+                        class="flex items-center space-x-4 bg-[#A717FE] px-[10px] py-[20px] w-[180px] h-[70px] rounded-xl cursor-pointer ml-[20px]"
+                    >
+                        <img
+                            src="assets/iconHome.png"
+                            alt="Dashboard"
+                            class="w-[25px] h-[19.44px]"
+                        />
+                        <span class="text-[20px] font-bold">Dashboard</span>
+                    </a>
+
+                    <!-- Transaction -->
+                    <a
+                        href="#"
+                        class="flex items-center space-x-4 px-6 py-5 rounded-xl hover:bg-gray-800 transition cursor-pointer"
+                    >
+                        <img
+                            src="assets/iconWallet.png"
+                            alt="Transaction"
+                            class="w-[25px] h-[19.44px]"
+                        />
+                        <span class="text-[20px] font-bold">Transaction</span>
+                    </a>
+
+                    <!-- Notifications -->
+                    <a
+                        href="#"
+                        class="flex items-center space-x-4 px-6 py-5 rounded-xl hover:bg-gray-800 transition cursor-pointer"
+                    >
+                        <img
+                            src="assets/iconNotifications.png"
+                            alt="Notifications"
+                            class="w-[25px] h-[19.44px]"
+                        />
+                        <span class="text-[20px] font-bold">Notifications</span>
+                    </a>
+
+                    <!-- Support -->
+                    <a
+                        href="#"
+                        class="flex items-center space-x-4 px-6 py-5 rounded-xl hover:bg-gray-800 transition cursor-pointer"
+                    >
+                        <img
+                            src="assets/iconSupport.png"
+                            alt="Support"
+                            class="w-[25px] h-[19.44px]"
+                        />
+                        <span class="text-[20px] font-bold">Support</span>
+                    </a>
+
+                    <!-- Settings -->
+                    <a
+                        href="#"
+                        class="flex items-center space-x-4 px-6 py-5 rounded-xl hover:bg-gray-800 transition cursor-pointer"
+                    >
+                        <img
+                            src="assets/iconSetting.png"
+                            alt="Settings"
+                            class="w-[25px] h-[19.44px]"
+                        />
+                        <span class="text-[20px] font-bold">Settings</span>
+                    </a>
+                </nav>
+
+                <!-- Log out - đẩy xuống cuối -->
+                <div class="pr-8 pb-24">
+                    <a
+                        href="#"
+                        class="flex items-center space-x-4 px-6 py-5 rounded-xl hover:bg-gray-800 transition cursor-pointer"
+                    >
+                        <img
+                            src="assets/iconLogOut.png"
+                            alt="Log out"
+                            class="w-[25px] h-[19.44px]"
+                        />
+                        <span class="text-[20px] font-bold">Log out</span>
+                    </a>
+                </div>
+            </aside>
+
+            <!-- Main content phải -->
+            <main class="flex-1 pl-12">
+                <!-- Tiêu đề Dashboard + Reviews & Feedback -->
+                <div class="flex justify-between items-start">
+                    <h1 class="text-[24px] font-bold relative inline-block">
+                        Dashboard
+                    </h1>
+
+                    <button
+                        class="p-[10px] border-2 border-[#A717FE] text-[20px] font-medium rounded-[10px] hover:bg-[#A717FE] hover:text-white transition"
+                    >
+                        Reviews & Feedback
+                    </button>
+                </div>
+
+                <!-- 3 card nhỏ -->
+                <div
+                    class="flex flex-col md:flex-row gap-8 mt-4 mb-12 justify-start items-center"
+                >
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-black text-white px-[20px] py-[30px] rounded-[10px] shadow-xl"
+                    >
+                        <h3 class="text-[24px] font-semibold text-[#DFF7F7]">
+                            Loans Available
+                        </h3>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-black text-white px-[20px] py-[30px] rounded-[10px] shadow-xl"
+                    >
+                        <h3 class="text-[24px] font-semibold text-[#DFF7F7]">
+                            Repayment Options
+                        </h3>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-black text-white px-[20px] py-[30px] rounded-[10px] shadow-xl"
+                    >
+                        <h3 class="text-[24px] font-semibold text-[#DFF7F7]">
+                            Percentage Calculator
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- 2 card lớn + Latest Update -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- REQUEST LOAN -->
+                    <div
+                        class="bg-black text-white rounded-[15px] shadow-2xl flex items-center justify-center py-24 px-8 w-[345px] h-[321px] mt-12 card-with-purple-border"
+                    >
+                        <h2 class="text-[36px] font-bold text-center">
+                            REQUEST LOAN
+                        </h2>
+                    </div>
+
+                    <!-- CHOOSE A REPAYMENT PLAN -->
+                    <div
+                        class="bg-black text-white rounded-[15px] shadow-2xl flex items-center justify-center py-24 px-8 w-[345px] h-[321px] mt-12 card-with-purple-border"
+                    >
+                        <h2
+                            class="text-[36px] font-bold text-center leading-tight"
+                        >
+                            CHOOSE A REPAYMENT PLAN
+                        </h2>
+                    </div>
+
+                    <!-- Latest Update -->
+                    <div
+                        class="bg-black text-white rounded-[10px] shadow-2xl p-10 lg:py-4 px-8 w-[300px] h-[500px] ml-8 card-with-purple-border"
+                    >
+                        <h3
+                            class="text-3xl lg:text-[24px] font-semibold mb-[10px] text-center p-[10px]"
+                        >
+                            Latest Update
+                        </h3>
+                        <p
+                            class="text-gray-300 text-[14px] leading-relaxed mb-[10px]"
+                        >
+                            Lorem ipsum dolor sit amet consectetur. Iaculis diam
+                            pretium sem porttitor nibh.
+                        </p>
+                        <p class="text-gray-300 text-[14px] leading-relaxed">
+                            Lorem ipsum dolor sit amet consectetur. Iaculis diam
+                            pretium sem porttitor nibh.
+                        </p>
+                        <p
+                            class="text-gray-300 text-[14px] leading-relaxed mb-[10px]"
+                        >
+                            Lorem ipsum dolor sit amet consectetur. Iaculis diam
+                            pretium sem porttitor nibh.
+                        </p>
+                        <p
+                            class="text-gray-300 text-[14px] leading-relaxed mb-[10px]"
+                        >
+                            Lorem ipsum dolor sit amet consectetur. Iaculis diam
+                            pretium sem porttitor nibh.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Loan application status dưới cùng -->
+                <div
+                    class="mt-[-24px] ml-36 card-with-purple-border w-[412px] h-[96px]"
+                >
+                    <button
+                        class="bg-black text-white text-2xl lg:text-[24px] font-bold px-[5px] py-[30px] rounded-[10px] shadow-2xl hover:bg-[#A717FE] transition duration-300 w-[412px] h-[96px]"
+                    >
+                        Loan application status
+                    </button>
+                </div>
+
+                <!-- Icon Chat cố định góc dưới bên phải -->
+                <div class="fixed bottom-8 right-8 z-50">
+                    <button
+                        class="text-[#A717FE] flex flex-col items-center justify-center w-30 h-28 px-4 pt-2 pb-4 text-opacity-75"
+                    >
+                        <span class="text-[20px] font-semibold">Chat Now</span>
+                        <img
+                            src="assets/chat.png"
+                            alt="Chat"
+                            class="w-[50px] h-[50px] mt-4"
+                        />
+                    </button>
+                </div>
+            </main>
+        </div>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </body>
+</html>
